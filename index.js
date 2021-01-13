@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
   const msg = 'Hello Node test!\n'
  setTimeout(function() {
     console.log('Blah blah blah blah extra-blah');
- }, 3000);
+ }, 10000);
   res.end(msg);
 });
 
