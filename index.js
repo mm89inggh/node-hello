@@ -4,8 +4,9 @@ const port = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   const msg = 'Hello Node test!\n'
-  console.log(`test`);
-  sleep(5000);
+ setTimeout(function() {
+    console.log('Blah blah blah blah extra-blah');
+ }, 3000);
   res.end(msg);
 });
 
