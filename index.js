@@ -5,6 +5,7 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
   const msg = 'Hello Node test!\n'
   console.log(`test`);
+  sleep(5000);
   res.end(msg);
 });
 
